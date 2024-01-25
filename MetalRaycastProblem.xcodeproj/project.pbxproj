@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		619767E72B62838900F8039E /* MetalRaycastProblemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619767E62B62838900F8039E /* MetalRaycastProblemApp.swift */; };
+		619767E92B62838900F8039E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619767E82B62838900F8039E /* ContentView.swift */; };
+		619767EB2B62838A00F8039E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619767EA2B62838A00F8039E /* Assets.xcassets */; };
+		619767EE2B62838A00F8039E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619767ED2B62838A00F8039E /* Preview Assets.xcassets */; };
+		619767F82B62838A00F8039E /* MetalRaycastProblemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619767F72B62838A00F8039E /* MetalRaycastProblemTests.swift */; };
+		619768022B62838A00F8039E /* MetalRaycastProblemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619768012B62838A00F8039E /* MetalRaycastProblemUITests.swift */; };
+		619768042B62838A00F8039E /* MetalRaycastProblemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619768032B62838A00F8039E /* MetalRaycastProblemUITestsLaunchTests.swift */; };
+		619768112B6283AB00F8039E /* ComputeRaycast.metal in Sources */ = {isa = PBXBuildFile; fileRef = 619768102B6283AB00F8039E /* ComputeRaycast.metal */; };
+		619768132B6283FC00F8039E /* MetalRaycast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619768122B6283FC00F8039E /* MetalRaycast.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		619767F42B62838A00F8039E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 619767DB2B62838900F8039E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 619767E22B62838900F8039E;
+			remoteInfo = MetalRaycastProblem;
+		};
+		619767FE2B62838A00F8039E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 619767DB2B62838900F8039E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 619767E22B62838900F8039E;
+			remoteInfo = MetalRaycastProblem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		619767E32B62838900F8039E /* MetalRaycastProblem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalRaycastProblem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		619767E62B62838900F8039E /* MetalRaycastProblemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRaycastProblemApp.swift; sourceTree = "<group>"; };
+		619767E82B62838900F8039E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		619767EA2B62838A00F8039E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		619767ED2B62838A00F8039E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		619767F32B62838A00F8039E /* MetalRaycastProblemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalRaycastProblemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		619767F72B62838A00F8039E /* MetalRaycastProblemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRaycastProblemTests.swift; sourceTree = "<group>"; };
+		619767FD2B62838A00F8039E /* MetalRaycastProblemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalRaycastProblemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		619768012B62838A00F8039E /* MetalRaycastProblemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRaycastProblemUITests.swift; sourceTree = "<group>"; };
+		619768032B62838A00F8039E /* MetalRaycastProblemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRaycastProblemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		619768102B6283AB00F8039E /* ComputeRaycast.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ComputeRaycast.metal; sourceTree = "<group>"; };
+		619768122B6283FC00F8039E /* MetalRaycast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRaycast.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		619767E02B62838900F8039E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		619767F02B62838A00F8039E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		619767FA2B62838A00F8039E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		619767DA2B62838900F8039E = {
+			isa = PBXGroup;
+			children = (
+				619767E52B62838900F8039E /* MetalRaycastProblem */,
+				619767F62B62838A00F8039E /* MetalRaycastProblemTests */,
+				619768002B62838A00F8039E /* MetalRaycastProblemUITests */,
+				619767E42B62838900F8039E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		619767E42B62838900F8039E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				619767E32B62838900F8039E /* MetalRaycastProblem.app */,
+				619767F32B62838A00F8039E /* MetalRaycastProblemTests.xctest */,
+				619767FD2B62838A00F8039E /* MetalRaycastProblemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		619767E52B62838900F8039E /* MetalRaycastProblem */ = {
+			isa = PBXGroup;
+			children = (
+				619767E62B62838900F8039E /* MetalRaycastProblemApp.swift */,
+				619767E82B62838900F8039E /* ContentView.swift */,
+				619768122B6283FC00F8039E /* MetalRaycast.swift */,
+				619768102B6283AB00F8039E /* ComputeRaycast.metal */,
+				619767EA2B62838A00F8039E /* Assets.xcassets */,
+				619767EC2B62838A00F8039E /* Preview Content */,
+			);
+			path = MetalRaycastProblem;
+			sourceTree = "<group>";
+		};
+		619767EC2B62838A00F8039E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				619767ED2B62838A00F8039E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		619767F62B62838A00F8039E /* MetalRaycastProblemTests */ = {
+			isa = PBXGroup;
+			children = (
+				619767F72B62838A00F8039E /* MetalRaycastProblemTests.swift */,
+			);
+			path = MetalRaycastProblemTests;
+			sourceTree = "<group>";
+		};
+		619768002B62838A00F8039E /* MetalRaycastProblemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				619768012B62838A00F8039E /* MetalRaycastProblemUITests.swift */,
+				619768032B62838A00F8039E /* MetalRaycastProblemUITestsLaunchTests.swift */,
+			);
+			path = MetalRaycastProblemUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		619767E22B62838900F8039E /* MetalRaycastProblem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 619768072B62838A00F8039E /* Build configuration list for PBXNativeTarget "MetalRaycastProblem" */;
+			buildPhases = (
+				619767DF2B62838900F8039E /* Sources */,
+				619767E02B62838900F8039E /* Frameworks */,
+				619767E12B62838900F8039E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalRaycastProblem;
+			productName = MetalRaycastProblem;
+			productReference = 619767E32B62838900F8039E /* MetalRaycastProblem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		619767F22B62838A00F8039E /* MetalRaycastProblemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6197680A2B62838A00F8039E /* Build configuration list for PBXNativeTarget "MetalRaycastProblemTests" */;
+			buildPhases = (
+				619767EF2B62838A00F8039E /* Sources */,
+				619767F02B62838A00F8039E /* Frameworks */,
+				619767F12B62838A00F8039E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				619767F52B62838A00F8039E /* PBXTargetDependency */,
+			);
+			name = MetalRaycastProblemTests;
+			productName = MetalRaycastProblemTests;
+			productReference = 619767F32B62838A00F8039E /* MetalRaycastProblemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		619767FC2B62838A00F8039E /* MetalRaycastProblemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6197680D2B62838A00F8039E /* Build configuration list for PBXNativeTarget "MetalRaycastProblemUITests" */;
+			buildPhases = (
+				619767F92B62838A00F8039E /* Sources */,
+				619767FA2B62838A00F8039E /* Frameworks */,
+				619767FB2B62838A00F8039E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				619767FF2B62838A00F8039E /* PBXTargetDependency */,
+			);
+			name = MetalRaycastProblemUITests;
+			productName = MetalRaycastProblemUITests;
+			productReference = 619767FD2B62838A00F8039E /* MetalRaycastProblemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		619767DB2B62838900F8039E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					619767E22B62838900F8039E = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					619767F22B62838A00F8039E = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 619767E22B62838900F8039E;
+					};
+					619767FC2B62838A00F8039E = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 619767E22B62838900F8039E;
+					};
+				};
+			};
+			buildConfigurationList = 619767DE2B62838900F8039E /* Build configuration list for PBXProject "MetalRaycastProblem" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 619767DA2B62838900F8039E;
+			productRefGroup = 619767E42B62838900F8039E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				619767E22B62838900F8039E /* MetalRaycastProblem */,
+				619767F22B62838A00F8039E /* MetalRaycastProblemTests */,
+				619767FC2B62838A00F8039E /* MetalRaycastProblemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		619767E12B62838900F8039E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619767EE2B62838A00F8039E /* Preview Assets.xcassets in Resources */,
+				619767EB2B62838A00F8039E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		619767F12B62838A00F8039E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		619767FB2B62838A00F8039E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		619767DF2B62838900F8039E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619768112B6283AB00F8039E /* ComputeRaycast.metal in Sources */,
+				619767E92B62838900F8039E /* ContentView.swift in Sources */,
+				619767E72B62838900F8039E /* MetalRaycastProblemApp.swift in Sources */,
+				619768132B6283FC00F8039E /* MetalRaycast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		619767EF2B62838A00F8039E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619767F82B62838A00F8039E /* MetalRaycastProblemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		619767F92B62838A00F8039E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619768042B62838A00F8039E /* MetalRaycastProblemUITestsLaunchTests.swift in Sources */,
+				619768022B62838A00F8039E /* MetalRaycastProblemUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		619767F52B62838A00F8039E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 619767E22B62838900F8039E /* MetalRaycastProblem */;
+			targetProxy = 619767F42B62838A00F8039E /* PBXContainerItemProxy */;
+		};
+		619767FF2B62838A00F8039E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 619767E22B62838900F8039E /* MetalRaycastProblem */;
+			targetProxy = 619767FE2B62838A00F8039E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		619768052B62838A00F8039E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		619768062B62838A00F8039E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		619768082B62838A00F8039E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MetalRaycastProblem/Preview Content\"";
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tkc..MetalRaycastProblem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		619768092B62838A00F8039E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MetalRaycastProblem/Preview Content\"";
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tkc..MetalRaycastProblem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6197680B2B62838A00F8039E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tkc..MetalRaycastProblemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetalRaycastProblem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MetalRaycastProblem";
+			};
+			name = Debug;
+		};
+		6197680C2B62838A00F8039E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tkc..MetalRaycastProblemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetalRaycastProblem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MetalRaycastProblem";
+			};
+			name = Release;
+		};
+		6197680E2B62838A00F8039E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tkc..MetalRaycastProblemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MetalRaycastProblem;
+			};
+			name = Debug;
+		};
+		6197680F2B62838A00F8039E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tkc..MetalRaycastProblemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MetalRaycastProblem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		619767DE2B62838900F8039E /* Build configuration list for PBXProject "MetalRaycastProblem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				619768052B62838A00F8039E /* Debug */,
+				619768062B62838A00F8039E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		619768072B62838A00F8039E /* Build configuration list for PBXNativeTarget "MetalRaycastProblem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				619768082B62838A00F8039E /* Debug */,
+				619768092B62838A00F8039E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6197680A2B62838A00F8039E /* Build configuration list for PBXNativeTarget "MetalRaycastProblemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6197680B2B62838A00F8039E /* Debug */,
+				6197680C2B62838A00F8039E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6197680D2B62838A00F8039E /* Build configuration list for PBXNativeTarget "MetalRaycastProblemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6197680E2B62838A00F8039E /* Debug */,
+				6197680F2B62838A00F8039E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 619767DB2B62838900F8039E /* Project object */;
+}
